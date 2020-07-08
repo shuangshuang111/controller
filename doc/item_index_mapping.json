@@ -1,0 +1,40 @@
+PUT /item
+{
+  "settings": {
+    "number_of_replicas": 0
+  },
+  "mappings": {
+    "itemList": {
+      "dynamic": false,
+      "properties": {
+        "productId": {
+          "type": "long"
+        },
+        "salePrice": {
+          "type": "double"
+        },
+        "productName": {
+          "type": "text",
+          "index": "true",
+          "analyzer": "ik_smart",
+          "search_analyzer": "ik_smart"
+        },
+        "subTitle": {
+          "type": "text",
+          "index": "true",
+          "analyzer": "ik_smart",
+          "search_analyzer": "ik_smart"
+        },
+        "productImageBig": {
+          "type": "keyword"
+        },
+        "categoryName": {
+          "type": "keyword"
+        },
+        "cid": {
+          "type": "integer"
+        }
+      }
+    }
+  }
+}
