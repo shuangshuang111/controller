@@ -72,7 +72,7 @@
         <javassist.version>3.21.0-GA</javassist.version>
         <swagger.version>2.9.2</swagger.version>
         <elasticsearch.version>6.4.0</elasticsearch.version>
-        <log4j.version>2.9.1</log4j.version>
+        <log4j.version>2.16.0</log4j.version>
         <shiro.version>1.4.0</shiro.version>
         <json.version>20171018</json.version>
         <mail.version>1.5.0-b01</mail.version>
